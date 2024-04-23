@@ -11,7 +11,7 @@
 }
 
 body{
-    background-color: #5493AA;  
+    background-color: #A9D6E5;
 }
 
 /*----Navbar----*/
@@ -23,18 +23,22 @@ body{
     font-family: 'Suez One';
     font-weight: 1000%;
 }
-/*----Navbar----*/
 
-/*-----Navbar-----*/
 .navbar{
     background-color: #AAD7F6;
 }
 /*-----Navbar-----*/
 
 /*-----Home-----*/
+.home{
+    height: 95vh;
+}
+
 .img-fluid{
-    margin-top: 100px;
-    padding-right: 100px;
+    margin-top: 70px;
+    padding-right: 60px;
+    width: 60%;
+    height: 80vh;
 }
 
 .aquaflow{
@@ -45,8 +49,11 @@ body{
 }
 
 /*-------Quote------*/
+.quote{
+    padding-left: 60px;
+}
+
 .water{
-    padding-left:1px;
     font-family: 'Suez One';
     font-weight: bold;
     color: azure;
@@ -54,7 +61,6 @@ body{
 }
 
 .when{
-    padding-left:1px;
     font-family: 'Suez One';
     color: #085372;
     font-weight: bold;
@@ -71,33 +77,36 @@ body{
 
 .services{
     margin-top: 20px;
+    margin-bottom: 20px;
     color: #013D67;
     font-family: 'Suez One';
+    font-size: 60px;
     font-weight: bold;
     padding-left: 5%;
     padding-right: 5%;
 }
 
+.card-img-top{
+    border-radius: 30px;
+}
+
 .col{
-    background-color: #A9D6E5;
+    margin-bottom: 6px;
+}
+
+.card{
+    border-radius: 30px;
 }
 
 .card-title{
     color: #013D67;
-    font-family: 'Poppins' "Times New Roman";
-    font-weight: bold;
-}
-
-.card-text{
-    font-family: 'Times New Roman', Times, serif;
-    
+    font-family: 'Suez One';
 }
 
 /*-------About Us------*/
 .wrapper{
     padding: 5px;
     max-width: 3000px;
-    
     width: 95%;
     margin: 20px auto;
 }
@@ -105,12 +114,14 @@ body{
 .wrapper h1{
     font-family: 'Suez One';
     color: #013D67;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .header{
     padding: 0 15px;
     text-align: center;
-    font-size: 21px;
 }
 
 .columns{
@@ -123,7 +134,9 @@ body{
 .column{
     flex: 1;
     border: 1px solid #666;
-    margin: 2px;
+    height: 59vh;
+    margin: 10px;
+    border-radius: 20px;
     padding: 10px;
     background: #3af4d5;
     transition: 0.3s;
@@ -138,14 +151,16 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 
-.column:first-child{
-    margin-left: 0;
-    background: #A9D6E5;
+#column1{
+    background-color: #AAD7F6;
 }
 
-.column:last-child{
-    margin-left: 0;
-    background: #33ace0;
+#column2{
+    background-color: #C7D5F3;
+}
+
+#column3{
+    background-color: #3af4d5;
 }
 
 @media screen and (max-width: 980px) {
@@ -177,6 +192,7 @@ footer{
     margin-top: -20px;
 }
 .contact-title{
+    margin-top: 20px;
     color: #013D67;
     font-family: 'Suez One';
     font-weight: bold;
@@ -195,6 +211,7 @@ footer{
     display: flex;
     align-items: center;
 }
+
 .contact-text{
     color: #013D67;
     font-family: 'Times New Roman', Times, serif;
@@ -255,23 +272,23 @@ footer{
     border: 1px solid transparent; /* Add a thin border */
     outline: none;
     border-radius: 10px;
-    color: #fff;
+    color: #000000;
     padding: 20px 20px; /* Adjust padding to your preference */
     transition: background-color 0.3s ease-in, color 0.3s ease-in-out, border-color 0.3s ease-in, transform 0.3s ease-in-out; /* Add transform transition */
 }  
 .input-box input:hover {
-    border-color: #fff;
+    border-color: #000000;
     transform: scale(1.05);  /* Change border color on hover */
 }
 .input-box textarea:hover {
-    border-color: #fff;
+    border-color: #000000;
     transform: scale(1.05);  /* Change border color on hover */
 }
 .input-box input::placeholder {
-    color: #fff;
+    color: #020202;
 }
 .input-box textarea::placeholder {
-    color: #fff;
+    color: #000000;
 }
 .form-container #loginbtn {
     background: #AAD7F6;
@@ -295,14 +312,13 @@ a.contact-link{
     color: black;
 }
 
-
 a.contact-link:hover{
     text-decoration: underline;
     transform: scale(1.1);
 }
 .footer-svg-container{
     transition: transform 0.3s ease;
-    color: white;
+    color: rgb(6, 5, 5);
 }
 .footer-svg-container:hover{
     transform: scale(1.1);
@@ -624,7 +640,7 @@ a.contact-link:hover{
     height: 11vh;
     text-align: center;
     padding: 20px 0;
-    background: gray;
+
     font-weight: 350;
     margin-top: 20px;
 }
